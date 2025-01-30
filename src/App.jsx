@@ -101,7 +101,7 @@ function App() {
             Without the Hassle
           </h1>
 
-          <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+       
         </header>
 
         {/* Trending movies */}
@@ -132,7 +132,10 @@ function App() {
 
         {/* All movies section  */}
         <section className="all-movies">
-          <h2 className="mt-[40px]">All Movies</h2>
+          <h2 className="mt-[40px]">All Movies <span>
+          <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+
+            </span></h2>
 
           {isLoading ? (
             <Spinner />
